@@ -27,3 +27,14 @@ function operation(fn, a, b) {
 }
 
 operation(sum, 10, 20);
+
+// arrow function
+operation((a, b) => a * b, 5, 5);
+operation(
+  (a, b) => {
+    const c = a + b;
+    return c * 2;
+  },
+  1,
+  2
+);
