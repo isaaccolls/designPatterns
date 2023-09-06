@@ -38,3 +38,15 @@ operation(
   1,
   2
 );
+
+// foreach
+const names = ["Beau", "Alena", "Tania", "Ana"];
+names.forEach((name) => console.log("👉️ name:", name));
+// inmutable: no altera el valor
+// ejem: aplicar foreach a "names" usando toUpperCase no altera el valor
+console.log("👉️ names:", names);
+names.forEach((name) => console.log("👉️ name:", name.toUpperCase()));
+// mutable: altera el valor
+// ejem: el metodo sort al ser aplicado a "names" altera su valor
+names.sort();
+console.log("👉️ names:", names);
