@@ -55,3 +55,38 @@ console.log("👉️ names:", names);
 const namesUpper = names.map((name) => name.toUpperCase());
 console.log("👉️ namesUpper:", namesUpper);
 console.log("👉️ names:", names);
+
+// reduce (inmutable)
+const numbers = [5, 4, 7, 1, 10];
+// reduce recibe una funcion de primer order como primer parametro
+const total = numbers.reduce((ac, number) => {
+  return ac + number;
+}, 0);
+console.log("👉️ total:", total);
+console.log("👉️ numbers:", numbers);
+
+// POO
+// clase <- recomendado
+class Drink {
+  constructor(name) {
+    this.name = name;
+  }
+
+  info() {
+    return `La bebida es: ${this.name}`;
+  }
+}
+
+const drink = new Drink("agua");
+console.log(drink.info());
+
+// (clase) funcional
+function Drink2(name) {
+  this.name = name;
+  this.info = function () {
+    return `La bebida es: ${this.name}`;
+  };
+}
+
+const drink2 = new Drink2("coca");
+console.log(drink2.info());
