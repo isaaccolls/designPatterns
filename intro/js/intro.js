@@ -50,3 +50,8 @@ names.forEach((name) => console.log("👉️ name:", name.toUpperCase()));
 // ejem: el metodo sort al ser aplicado a "names" altera su valor
 names.sort();
 console.log("👉️ names:", names);
+
+// map (inmutable)
+const namesUpper = names.map((name) => name.toUpperCase());
+console.log("👉️ namesUpper:", namesUpper);
+console.log("👉️ names:", names);
