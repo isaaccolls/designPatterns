@@ -90,3 +90,20 @@ function Drink2(name) {
 
 const drink2 = new Drink2("coca");
 console.log(drink2.info());
+
+// herencia
+class Beer extends Drink {
+  constructor(name, alcohol) {
+    // el metodo super se encarga de pasar
+    // los parametros correspondientes al padre
+    super(name);
+    this.alcohol = alcohol;
+  }
+
+  info() {
+    return super.info() + " " + this.alcohol;
+  }
+}
+
+const beer = new Beer("erdinger", 8.5);
+console.log(beer.info());
