@@ -6,6 +6,8 @@ class Singleton {
   constructor() {
     console.log("👉️ constructor");
     this.random = Math.random();
+    // al trabajar con el nombre de la clase
+    // es algo estatico `Singleton.instance` 👇️
     if (Singleton.instance) {
       console.log("👉️ ya existe");
       return Singleton.instance;
