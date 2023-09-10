@@ -1,9 +1,12 @@
-# typescript
+# design patterns
 
-## requirements
+ejercicios en JS y TS sobre design patterns del curso de udemy ["Patrones de Diseño en JavaScript y TypeScript"](https://www.udemy.com/course/patrones-de-diseno-en-javascript-y-typescript/) 🤙
 
-`npm i ts-node`
+# patrones de diseño
 
-## run
+existen de tres tipos: creación, estructurales y de comportamiento
 
-`ts-node [file_name]`
+# running typescript
+
+- requirements: `npm i ts-node`
+- run: `ts-node [file_name]`
