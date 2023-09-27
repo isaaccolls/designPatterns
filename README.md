@@ -8,5 +8,5 @@ existen de tres tipos: creación, estructurales y de comportamiento
 
 # running typescript
 
-- requirements: `npm i ts-node`
+- requirements: `npm i -g ts-node`
 - run: `ts-node [file_name]`
