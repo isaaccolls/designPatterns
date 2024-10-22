@@ -1,6 +1,12 @@
 import { FilterField } from "./FilterField";
-import { FilterOperator } from "./FilterOperator";
+import { FilterOperator, Operator } from "./FilterOperator";
 import { FilterValue } from "./FilterValue";
+
+export type FiltersPrimitives = {
+	field: string;
+	operator: string;
+	value: string;
+};
 
 export class Filter {
 	readonly field: FilterField;
@@ -11,5 +17,13 @@ export class Filter {
 		this.field = field;
 		this.operator = operator;
 		this.value = value;
+	}
+
+	static fromPrimitives(field: string, operator: string, value: string): Filter {
+		return new Filter(
+			new FilterField(field),
+			new FilterOperator(operator as Operator),
+			new FilterValue(value),
+		);
 	}
 }

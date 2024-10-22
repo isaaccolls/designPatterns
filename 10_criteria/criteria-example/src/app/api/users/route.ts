@@ -1,38 +1,25 @@
 import { NextRequest, NextResponse } from "next/server";
 
-export function GET(request: NextRequest) {
-  const { searchParams } = new URL(request.url);
-  const filters = parseFilters(searchParams);
-  return NextResponse.json({
-    filters,
-    orderBy: searchParams.get("orderBy"),
-    order: searchParams.get("order"),
-  });
-}
+import { Criteria } from "@/contexts/shared/domain/criteria/Criteria";
+import { SearchParamsCriteriaFiltersParser } from "@/contexts/shared/infrastructure/criteria/SearchParamsCriteriaFiltersParser";
 
-interface Filter {
-  field: string;
-  operator: string;
-  value: string;
-}
+export function GET(request: NextRequest): NextResponse {
+	const { searchParams } = new URL(request.url);
 
-function parseFilters(searchParams: URLSearchParams): Filter[] {
-  const tempFilters: Record<string, Partial<Filter>> = {};
-  searchParams.forEach((value, key) => {
-    const match = key.match(/filters\[(\d+)]\[(.+)]/);
-    if (match) {
-      const index = match[1];
-      const property = match[2] as keyof Filter;
-      if (!tempFilters[index]) {
-        tempFilters[index] = {};
-      }
-      tempFilters[index][property] = value;
-    }
-  });
-  return Object.values(tempFilters).filter(
-    (filter) =>
-      filter.field !== undefined &&
-      filter.operator !== undefined &&
-      filter.value !== undefined
-  ) as Filter[];
+	const filters = SearchParamsCriteriaFiltersParser.parse(searchParams);
+
+	const criteria = Criteria.fromPrimitives(
+		filters,
+		searchParams.get("orderBy"),
+		searchParams.get("order"),
+	);
+
+	// eslint-disable-next-line no-console
+	console.log(criteria);
+
+	return NextResponse.json({
+		filters,
+		orderBy: searchParams.get("orderBy"),
+		order: searchParams.get("order"),
+	});
 }
