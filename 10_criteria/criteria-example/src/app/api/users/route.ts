@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
-import { Criteria } from "@/contexts/shared/domain/criteria/Criteria";
-import { SearchParamsCriteriaFiltersParser } from "@/contexts/shared/infrastructure/criteria/SearchParamsCriteriaFiltersParser";
+import { Criteria } from "../../../contexts/shared/domain/criteria/Criteria";
+import { SearchParamsCriteriaFiltersParser } from "../../../contexts/shared/infrastructure/criteria/SearchParamsCriteriaFiltersParser";
 
 export function GET(request: NextRequest): NextResponse {
 	const { searchParams } = new URL(request.url);

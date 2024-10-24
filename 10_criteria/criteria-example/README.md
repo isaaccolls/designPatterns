@@ -41,3 +41,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 - [codely linter config](https://github.com/CodelyTV/eslint-config-codely)
 - run tests: `npx jest`
+- run docker: `docker compose up`
