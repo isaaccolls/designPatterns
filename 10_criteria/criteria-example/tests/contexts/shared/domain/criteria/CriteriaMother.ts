@@ -21,4 +21,46 @@ export class CriteriaMother {
 
 		return Criteria.fromPrimitives(primitives.filters, primitives.orderBy, primitives.orderType);
 	}
+
+	static empty(): Criteria {
+		return Criteria.fromPrimitives([], null, null);
+	}
+
+	static emptySorted(orderBy: string, orderType: string): Criteria {
+		return Criteria.fromPrimitives([], orderBy, orderType);
+	}
+
+	static withOneFilter(field: string, operator: string, value: string) {
+		return Criteria.fromPrimitives(
+			[
+				{
+					field,
+					operator,
+					value,
+				},
+			],
+			null,
+			null,
+		);
+	}
+
+	static withOneFilterSorted(
+		field: string,
+		operator: string,
+		value: string,
+		orderBy: string,
+		orderType: string,
+	) {
+		return Criteria.fromPrimitives(
+			[
+				{
+					field,
+					operator,
+					value,
+				},
+			],
+			orderBy,
+			orderType,
+		);
+	}
 }

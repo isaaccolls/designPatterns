@@ -18,4 +18,12 @@ export class Criteria {
 	): Criteria {
 		return new Criteria(Filters.fromPrimitives(filters), Order.fromPrimitives(orderBy, orderType));
 	}
+
+	hasOrder(): boolean {
+		return !this.order.isNone();
+	}
+
+	hasFilters(): boolean {
+		return !this.filters.isEmpty();
+	}
 }
