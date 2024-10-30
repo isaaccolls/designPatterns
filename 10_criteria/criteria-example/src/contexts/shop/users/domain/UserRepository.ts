@@ -8,6 +8,4 @@ export interface UserRepository {
 	search(id: UserId): Promise<User | null>;
 
 	matching(criteria: Criteria): Promise<User[]>;
-
-	count(): Promise<number>;
 }
