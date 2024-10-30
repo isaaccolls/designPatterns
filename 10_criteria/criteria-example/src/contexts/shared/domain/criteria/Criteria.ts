@@ -6,17 +6,27 @@ export class Criteria {
 	constructor(
 		public readonly filters: Filters,
 		public readonly order: Order,
+		public readonly pageSize: number | null,
+		public readonly pageNumber: number | null,
 	) {
-		this.filters = filters;
-		this.order = order;
+		if (pageNumber !== null && pageSize === null) {
+			throw new Error("Page size is required when page number is defined");
+		}
 	}
 
 	static fromPrimitives(
 		filters: FiltersPrimitives[],
 		orderBy: string | null,
 		orderType: string | null,
+		pageSize: number | null,
+		pageNumber: number | null,
 	): Criteria {
-		return new Criteria(Filters.fromPrimitives(filters), Order.fromPrimitives(orderBy, orderType));
+		return new Criteria(
+			Filters.fromPrimitives(filters),
+			Order.fromPrimitives(orderBy, orderType),
+			pageSize,
+			pageNumber,
+		);
 	}
 
 	hasOrder(): boolean {

@@ -18,6 +18,8 @@ describe("UsersByCriteriaSearcher should", () => {
 				criteria.filters.toPrimitives(),
 				criteria.order.orderBy.value,
 				criteria.order.orderType.value,
+				criteria.pageSize,
+				criteria.pageNumber,
 			),
 		).toStrictEqual(expectedUsers);
 	});
