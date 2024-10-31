@@ -24,3 +24,23 @@ Content-Type: application/json
     }
   }
 }
+
+###
+
+# Use new esql
+POST localhost:9200/_query?format=yaml
+Content-Type: application/json
+
+{
+  "query": "FROM users | WHERE name LIKE \"*Code*\""
+}
+
+###
+
+# Use new esql AND
+POST localhost:9200/_query?format=txt
+Content-Type: application/json
+
+{
+  "query": "FROM users | WHERE name LIKE \"*Javi*\" AND email == \"Felton83@hotmail.com\""
+}
