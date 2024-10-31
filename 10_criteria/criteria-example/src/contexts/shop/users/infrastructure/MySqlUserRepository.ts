@@ -18,20 +18,30 @@ export class MySqlUserRepository implements UserRepository {
 	async save(user: User): Promise<void> {
 		const userPrimitives = user.toPrimitives();
 
-		const query = `
-			INSERT INTO shop__users (id, name, email, profile_picture)
+		const usersQuery = `
+			INSERT INTO shop__users (id, name)
 			VALUES (
 				'${userPrimitives.id}',
-				'${userPrimitives.name}',
+				'${userPrimitives.name}'
+			);`;
+		const dataQuery = `
+			INSERT INTO shop__users_data (id, email, profile_picture)
+			VALUES (
+				'${userPrimitives.id}',
 				'${userPrimitives.email}',
 				'${userPrimitives.profilePicture}'
-			);`;
-
-		await this.connection.execute(query);
+		    );`;
+		// todo: this should be a transaction
+		await this.connection.execute(usersQuery);
+		await this.connection.execute(dataQuery);
 	}
 
 	async search(id: UserId): Promise<User | null> {
-		const query = `SELECT id, name, email, profile_picture FROM shop__users WHERE id = '${id.value}';`;
+		const query = `
+			SELECT u.id, u.name, d.email, d.profile_picture
+			FROM shop__users u
+				INNER JOIN ecommerce.shop__users_data d ON u.id = d.id
+			WHERE u.id = '${id.value}';`;
 
 		const result = await this.connection.searchOne<DatabaseUser>(query);
 
@@ -51,7 +61,11 @@ export class MySqlUserRepository implements UserRepository {
 		const converter = new CriteriaToSqlConverter();
 
 		const result = await this.connection.searchAll<DatabaseUser>(
-			converter.convert(["id", "name", "email", "profile_picture"], "shop__users", criteria),
+			converter.convert(
+				["u.id", "name", "email", "profile_picture"],
+				"shop__users u INNER JOIN ecommerce.shop__users_data d ON u.id = d.id",
+				criteria,
+			),
 		);
 
 		return result.map((user) =>
