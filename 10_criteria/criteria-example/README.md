@@ -39,6 +39,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 # 👀 some custom stuff 👇👇👇
 
+- [repo course](https://github.com/CodelyTV/design_patterns-criteria-course/tree/main)
 - [codely linter config](https://github.com/CodelyTV/eslint-config-codely)
 - run tests: `npx jest`
 - docker:
