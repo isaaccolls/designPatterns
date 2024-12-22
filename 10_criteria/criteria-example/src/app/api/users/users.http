@@ -9,3 +9,7 @@ GET http://localhost:3000/api/users?filters[0][field]=name&filters[0][operator]=
 
 ### Filtering by one field papginating
 GET http://localhost:3000/api/users?filters[0][field]=name&filters[0][operator]=CONTAINS&filters[0][value]=Javi&pageSize=1&pageNumber=1
+
+### Page size and page number
+GET http://localhost:3000/api/users?pageSize=2&pageNumber=1
+
