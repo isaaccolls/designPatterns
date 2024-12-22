@@ -14,7 +14,7 @@ export class UsersByCriteriaSearcher {
 		pageNumber: number | null,
 	): Promise<User[]> {
 		const criteria = Criteria.fromPrimitives(filters, orderBy, orderType, pageSize, pageNumber);
-
+		console.log("🚀🚀 criteria: ", JSON.stringify(criteria));
 		return this.repository.matching(criteria);
 	}
 }
