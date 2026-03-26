@@ -2,7 +2,7 @@
 
 **Patrón de comportamiento (GoF)** — Define una familia de algoritmos, los encapsula y los hace **intercambiables** sin modificar el código del contexto que los usa.
 
-[Navegación: Inicio](../README.md) · [Índice](../docs/INDICE.md) · [← Singleton](../01_singleton/README.md) · [→ Observer](../03_observer/README.md)
+[Navegación: Inicio](../../README.md) · [Índice](../../docs/INDICE.md) · [← Singleton](../../creational/singleton/README.md) · [→ Observer](../observer/README.md)
 
 ## Qué problema resuelve
 

@@ -2,7 +2,7 @@
 
 **Patrón de dominio y aplicación** — Modela reglas de búsqueda y filtrado como **objetos combinables** (AND, OR, orden, límites) en lugar de ensamblar strings o condicionales a mano.
 
-[Navegación: Inicio](../README.md) · [Índice](../docs/INDICE.md) · [← Object Mother](../09_object-mother/README.md) · [→ Adapter](../11_adapter/README.md)
+[Navegación: Inicio](../../README.md) · [Índice](../../docs/INDICE.md) · [← Object Mother](../../creational/object-mother/README.md) · [→ Adapter](../../structural/adapter/README.md)
 
 ## Qué problema resuelve
 

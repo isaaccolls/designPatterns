@@ -2,7 +2,7 @@
 
 **Patrón estructural (GoF)** — Convierte la interfaz de una clase en otra que el cliente ya utiliza.
 
-[Navegación: Inicio](../README.md) · [Índice detallado](../docs/INDICE.md) · [← Criteria](../10_criteria/README.md)
+[Navegación: Inicio](../../README.md) · [Índice detallado](../../docs/INDICE.md) · [← Criteria](../../domain-application/criteria/README.md)
 
 ## Qué problema resuelve
 
@@ -19,7 +19,7 @@ Un **adaptador** implementa la interfaz “objetivo” y **delega** en el objeto
 | `ts/adapter.ts` | Contrato `Notifier` + clase adaptadora |
 | `js/adapter.js` | Mismo flujo en JS                      |
 
-Ejemplo: desde `11_adapter`, `node js/adapter.js` o `ts-node ts/adapter.ts`.
+Ejemplo: desde `structural/adapter`, `node js/adapter.js` o `ts-node ts/adapter.ts`.
 
 ## Cuándo usarlo
 

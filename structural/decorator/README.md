@@ -2,7 +2,7 @@
 
 **Patrón estructural (GoF)** — Añade **responsabilidades** a un objeto dinámicamente envolviéndolo en “capas” que comparten la misma interfaz.
 
-[Navegación: Inicio](../README.md) · [Índice](../docs/INDICE.md) · [← Observer](../03_observer/README.md) · [→ Builder](../05_builder/README.md)
+[Navegación: Inicio](../../README.md) · [Índice](../../docs/INDICE.md) · [← Observer](../../behavioral/observer/README.md) · [→ Builder](../../creational/builder/README.md)
 
 ## Qué problema resuelve
 

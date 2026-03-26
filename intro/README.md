@@ -2,7 +2,7 @@
 
 **Preparación** — No es un patrón GoF; sirve de base para interfaces, herencia y `static`.
 
-[Navegación: Inicio](../README.md) · [Índice detallado](../docs/INDICE.md) · [Siguiente: Singleton →](../01_singleton/README.md)
+[Navegación: Inicio](../README.md) · [Índice detallado](../docs/INDICE.md) · [Siguiente: Singleton →](../creational/singleton/README.md)
 
 ## Qué encontrarás
 

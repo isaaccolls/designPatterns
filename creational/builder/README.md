@@ -2,7 +2,7 @@
 
 **Patrón creacional (GoF)** — Separa la **construcción** de un objeto complejo de su **representación**, permitiendo distintos procesos de armado con la misma pieza de código cliente.
 
-[Navegación: Inicio](../README.md) · [Índice](../docs/INDICE.md) · [← Decorator](../04_decorator/README.md) · [→ State](../06_state/README.md)
+[Navegación: Inicio](../../README.md) · [Índice](../../docs/INDICE.md) · [← Decorator](../../structural/decorator/README.md) · [→ State](../../behavioral/state/README.md)
 
 ## Qué problema resuelve
 

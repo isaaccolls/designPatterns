@@ -2,7 +2,7 @@
 
 **Patrón creacional (GoF)** — Garantiza **una única instancia** de una clase y un punto de acceso global controlado a ella.
 
-[Navegación: Inicio](../README.md) · [Índice](../docs/INDICE.md) · [← Intro](../00_intro/README.md) · [→ Strategy](../02_strategy/README.md)
+[Navegación: Inicio](../../README.md) · [Índice](../../docs/INDICE.md) · [← Intro](../../intro/README.md) · [→ Strategy](../../behavioral/strategy/README.md)
 
 ## Qué problema resuelve
 

@@ -2,7 +2,7 @@
 
 **Patrón de comportamiento (GoF)** — Relación **uno-a-muchos**: cuando el sujeto cambia, **notifica** automáticamente a los observadores registrados.
 
-[Navegación: Inicio](../README.md) · [Índice](../docs/INDICE.md) · [← Strategy](../02_strategy/README.md) · [→ Decorator](../04_decorator/README.md)
+[Navegación: Inicio](../../README.md) · [Índice](../../docs/INDICE.md) · [← Strategy](../strategy/README.md) · [→ Decorator](../../structural/decorator/README.md)
 
 ## Qué problema resuelve
 

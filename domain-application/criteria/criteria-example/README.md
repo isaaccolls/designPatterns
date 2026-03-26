@@ -1,4 +1,4 @@
-[← Criterios (índice del patrón)](../README.md) · [README del repositorio](../../README.md)
+[← Criterios (índice del patrón)](../README.md) · [README del repositorio](../../../README.md)
 
 - [Getting Started](#getting-started)
 - [👀 some custom stuff 👇👇👇](#-some-custom-stuff-)

@@ -2,7 +2,7 @@
 
 **Patrón estructural (GoF)** — Ofrece una **interfaz unificada y sencilla** a un subsistema más complejo (varias clases, protocolos o APIs).
 
-[Navegación: Inicio](../README.md) · [Índice](../docs/INDICE.md) · [← Bridge](../07_bridge/README.md) · [→ Object Mother](../09_object-mother/README.md)
+[Navegación: Inicio](../../README.md) · [Índice](../../docs/INDICE.md) · [← Bridge](../bridge/README.md) · [→ Object Mother](../../creational/object-mother/README.md)
 
 ## Qué problema resuelve
 

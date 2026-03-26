@@ -2,7 +2,7 @@
 
 **Patrón de soporte a pruebas** (no es uno de los 23 GoF) — Centraliza la creación de **objetos de test** con valores por defecto sensatos y métodos para variaciones comunes.
 
-[Navegación: Inicio](../README.md) · [Índice](../docs/INDICE.md) · [← Facade](../08_facade/README.md) · [→ Criteria](../10_criteria/README.md)
+[Navegación: Inicio](../../README.md) · [Índice](../../docs/INDICE.md) · [← Facade](../../structural/facade/README.md) · [→ Criteria](../../domain-application/criteria/README.md)
 
 ## Qué problema resuelve
 

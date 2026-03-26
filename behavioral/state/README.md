@@ -2,7 +2,7 @@
 
 **Patrón de comportamiento (GoF)** — Permite que un objeto **altere su comportamiento** cuando su estado interno cambia; parece que cambia de clase.
 
-[Navegación: Inicio](../README.md) · [Índice](../docs/INDICE.md) · [← Builder](../05_builder/README.md) · [→ Bridge](../07_bridge/README.md)
+[Navegación: Inicio](../../README.md) · [Índice](../../docs/INDICE.md) · [← Builder](../../creational/builder/README.md) · [→ Bridge](../../structural/bridge/README.md)
 
 ## Qué problema resuelve
 

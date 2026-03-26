@@ -2,7 +2,7 @@
 
 **Patrón estructural (GoF)** — **Desacopla** una abstracción de su implementación para que ambas puedan evolucionar por separado. (También citado como _Handle/Body_.)
 
-[Navegación: Inicio](../README.md) · [Índice](../docs/INDICE.md) · [← State](../06_state/README.md) · [→ Facade](../08_facade/README.md)
+[Navegación: Inicio](../../README.md) · [Índice](../../docs/INDICE.md) · [← State](../../behavioral/state/README.md) · [→ Facade](../facade/README.md)
 
 ## Qué problema resuelve
 
