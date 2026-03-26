@@ -8,7 +8,7 @@ Ejemplos ejecutables agrupados por categoría (`intro/`, `creational/`, `structu
 
 | Entorno    | Requisitos                                        | Comando típico               |
 | ---------- | ------------------------------------------------- | ---------------------------- |
-| TypeScript | `nvm use v16.16.0`, `npm i -g ts-node`            | `ts-node ruta/al/archivo.ts` |
+| TypeScript | `npm i -g ts-node`                                | `ts-node ruta/al/archivo.ts` |
 | JavaScript | Node o navegador (p. ej. `index.html` en `intro`) | `node ruta/al/archivo.js`    |
 
 El ejemplo **Criteria** incluye una app Next.js: ver [domain-application/criteria/README.md](domain-application/criteria/README.md) y [domain-application/criteria/criteria-example/README.md](domain-application/criteria/criteria-example/README.md).

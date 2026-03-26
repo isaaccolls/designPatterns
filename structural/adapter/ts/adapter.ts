@@ -11,7 +11,7 @@ interface Notifier {
 // Clase con la API legada
 class LegacyEmailApi {
   dispatchEmail(body: string, subject: string): void {
-    console.log(`[legacy] subject="${subject}" body="${body}"`);
+    console.log(`[legacy] subject="${subject}" body="${body} 🚀"`);
   }
 }
 
